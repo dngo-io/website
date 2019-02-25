@@ -5,6 +5,14 @@ engine and put your template assets into `public` folder.
 
 To run this sample project, please follow these steps.
 
+**Prerequisite**
+
+*Download git from https://git-scm.com/*
+
+*Download composer from https://getcomposer.org/*
+
+**You are ready to run:**
+
 install dependencies:
 
     composer install
