@@ -5,8 +5,8 @@
         <div class="navbar-left">
             <button class="navbar-toggler" type="button">&#9776;</button>
             <a class="navbar-brand" href="{{ url('/') }}">
-                <img class="logo-dark" src="{{ asset('assets/img/fornax-studio-logo.png') }}" width="170" alt="{{ config('app.name') }} Logo">
-                <img class="logo-light" src="{{ asset('assets/img/fornax-studio-logo-negative.png') }}" width="170" alt="{{ config('app.name') }} Logo">
+                <img class="logo-dark" src="{{ asset('assets/img/img/dngo-hq-logo.png') }}" width="170" alt="{{ config('app.name') }} Logo">
+                <img class="logo-light" src="{{ asset('assets/img/img/dngo-hq-logo.png') }}" width="170" alt="{{ config('app.name') }} Logo">
             </a>
         </div>
 
@@ -16,9 +16,6 @@
             <ul class="nav nav-navbar">
                 <li class="nav-item">
                     <a class="nav-link" href="{{ url('/') }}">@lang('pages.menu.Home')</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ url('/projects') }}">@lang('pages.menu.Projects')</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{ url('/contact') }}">@lang('pages.menu.Contact')</a>

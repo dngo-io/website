@@ -23,21 +23,30 @@
     <meta property="og:image" content="{{ asset('assets/img/og-fornax-studio-img.jpg') }}">
     <meta property="og:url" content="{{ config('app.url') }}">
     <meta name="twitter:card" content="summary_large_image">
+    <link rel="shortcut icon" href="{{ asset("favicon.ico") }}"/>
+    <link rel="apple-touch-icon" sizes="57x57" href="{{ asset("assets/img/dngo/apple-icon-57x57.png") }}">
+    <link rel="apple-touch-icon" sizes="60x60" href="{{ asset("assets/img/dngo/apple-icon-60x60.png") }}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ asset("assets/img/dngo/apple-icon-72x72.png") }}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ asset("assets/img/dngo/apple-icon-76x76.png") }}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ asset("assets/img/dngo/apple-icon-114x114.png") }}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ asset("assets/img/dngo/apple-icon-120x120.png") }}">
+    <link rel="apple-touch-icon" sizes="144x144" href="{{ asset("assets/img/dngo/apple-icon-144x144.png") }}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ asset("assets/img/dngo/apple-icon-152x152.png") }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset("assets/img/dngo/apple-icon-180x180.png") }}">
+    <link rel="icon" type="image/png" sizes="192x192"  href="{{ asset("assets/img/dngo/android-icon-192x192.png") }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset("assets/img/dngo/favicon-32x32.png") }}">
+    <link rel="icon" type="image/png" sizes="96x96" href="{{ asset("assets/img/dngo/favicon-96x96.png") }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset("assets/img/dngo/favicon-16x16.png") }}">
+    <link rel="manifest" href="{{ asset("assets/img/dngo/manifest.json") }}">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="{{ asset("assets/img/dngo/ms-icon-144x144.png") }}">
+    <meta name="theme-color" content="#ffffff">
 </head>
 
 <body class="@stack('body-class')">
 @yield('page')
 <script src="{{ asset('assets/js/compiled.js') }}"></script>
 {!! NoCaptcha::renderJs() !!}
-<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/4753846.js"></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123394344-1"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-123394344-1');
-</script>
 @stack('scripts')
 <script>@stack('code')</script>
 </body>

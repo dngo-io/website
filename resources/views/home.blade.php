@@ -1,179 +1,344 @@
 @extends('layout.page')
 @section('title', __('pages.title.Home'))
 @section('content')
-    <header class="header text-white h-fullscreen overflow-hidden" id="home-header">
-        <canvas class="constellation" data-radius="0"></canvas>
-        <div class="container position-static">
+    <header id="home" class="header" style="background-image: linear-gradient(150deg, #fdfbfb 0%, #eee 100%);">
+        <div class="container">
             <div class="row align-items-center h-100">
-                <div class="col-lg-7">
-                    <h1 class="display-4 fw-500 d-none d-sm-block">@lang('pages.home.type-intro') <span class="fw-400 pl-2" data-typing="@lang('pages.home.type')" data-type-speed="80"></span></h1>
-                    <p class="lead mt-5 mb-7 mb-md-9 w-80">@lang('pages.home.home-intro')</p>
-                    <a class="btn btn-xl btn-round btn-success w-220 mr-3 px-6" href="#section-demo">@lang('pages.home.Explore Our Products')</a>
-                    <a class="btn btn-xl btn-round btn-outline-light w-220 px-6 d-none d-md-inline-block" href="#section-values">@lang('pages.home.Explore Our Values')</a>
+
+                <div class="col-lg-5">
+                    <h1 class="display-4"><strong>{{ config('app.name') }}</strong>;<br>@lang('pages.home.slogan')</h1>
+                    <p class="lead mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+                    <hr class="w-10 ml-0 my-7">
+
+                    <p class="gap-xy">
+                        <a class="btn btn-lg btn-round btn-success mw-200" href="#section-pricing">Get Started</a>
+                        <a class="btn btn-lg btn-round btn-outline-success mw-200" href="#section-features">Features</a>
+                    </p>
                 </div>
-                <div class="col-lg-5 d-none d-lg-block">
+
+                <div class="col-lg-6 ml-auto">
+                    <div class="video-wrapper ratio-16x9 rounded shadow-6 mt-8 mt-lg-0">
+                        <div class="poster" style="background-image: url({{ asset('assets/img/preview/shot-1.png') }})"></div>
+                        <button class="btn btn-circle btn-lg btn-info"><i class="fa fa-play"></i></button>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/3xXX_I33hwg?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+                    </div>
                 </div>
+
             </div>
         </div>
     </header>
     <main class="main-content">
-        <section id="section-demo" class="section overflow-hidden bg-gray">
+
+        <!--
+        |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+        | Features
+        |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+        !-->
+        <section id="section-features" class="section">
             <div class="container">
                 <header class="section-header">
-                    <small>"@lang('pages.home.Fornax Constellation')"</small>
-                    <h2>@lang('pages.title.Projects')</h2>
+                    <small>Feature</small>
+                    <h2>Team communication for the 21st century.</h2>
                     <hr>
-                    <p class="lead">@lang('pages.home.lead')</p>
                 </header>
 
+
+                <div class="row gap-y align-items-center">
+                    <div class="col-md-6 ml-auto">
+                        <h4>Drag, drop, and share your files.</h4>
+                        <p>Not just your messages, but all your files, images, PDFs, documents, and spreadsheets can be dropped right into TheSaaS and shared with anyone you want. Add comments, star for later reference, and it’s all completely searchable.</p>
+                        <p>If you use any services like Google Drive, Dropbox, or Box, just paste the link and that document is immediately in sync and searchable too.</p>
+                    </div>
+
+                    <div class="col-md-5 order-md-first">
+                        <img src="{{ asset('assets/img/vector/10.png') }}" alt="...">
+                    </div>
+                </div>
+
+
+                <hr class="my-8">
+
+
+                <div class="row gap-y align-items-center">
+                    <div class="col-md-6 mr-auto">
+                        <h4>Works everywhere you go</h4>
+                        <p>Everything in TheSaaS—messages, notifications, files, and all—is automatically indexed and archived so that you can have it at your fingertips whenever you want. TheSaaS also indexes the content of every file so you can search within PDFs, Word documents, Google docs, and more. With one search box and a set of powerful search operators, you can slice and dice your way to that one message in your communication haystack.</p>
+                    </div>
+
+                    <div class="col-md-5">
+                        <img src="{{ asset('assets/img/vector/11.png') }}" alt="...">
+                    </div>
+                </div>
+
+
+                <hr class="my-8">
+
+
+                <div class="row gap-y align-items-center">
+                    <div class="col-md-6 ml-auto">
+                        <h4>All your tools in one place.</h4>
+                        <p>Connect all the tools you use to TheSaaS and avoid all that constant switching between apps. Set up your integration so that you get all your notifications directly within TheSaaS—from support requests, code check-ins, and error logs to sales leads—all of them searchable in one central archive.</p>
+                        <p>If you use any services like Google Drive, Dropbox, or Box, just paste the link and that document is immediately in sync and searchable too.</p>
+                    </div>
+
+                    <div class="col-md-5 order-md-first">
+                        <img src="{{ asset('assets/img/vector/12.png') }}" alt="...">
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+
+        <!--
+        |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+        | Features
+        |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+        !-->
+        <section class="section bg-gray">
+            <div class="container">
                 <div class="row gap-y">
 
-                    <div class="col-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
-                        <a class="card shadow-1 hover-shadow-7" href="https://dngo.io" target="_blank">
-                            <img class="card-img-top" src="{{ asset('assets/img/preview/dngo.png') }}" alt="dNGO">
-                            <div class="card-body">
-                                <h6 class="mb-0">dNGO</h6>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-6 col-lg-4" data-aos="fade-up" data-aos-delay="150">
-                        <a class="card shadow-1 hover-shadow-7" href="https://rezervapp.com" target="_blank">
-                            <img class="card-img-top" src="{{ asset('assets/img/preview/rezervapp.png') }}" alt="rezervapp">
-                            <div class="card-body">
-                                <h6 class="mb-0">rezervapp</h6>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
-                        <a class="card shadow-1 hover-shadow-7" href="https://kali.fornaxstudio.com" target="_blank">
-                            <img class="card-img-top" src="{{ asset('assets/img/preview/kali-web.png') }}" alt="kali">
-                            <div class="card-body">
-                                <h6 class="mb-0">kali</h6>
-                            </div>
-                        </a>
+                    <div class="col-lg-4">
+                        <div class="card card-body border text-center">
+                            <p class="my-5"><i class="icon-layers lead-8 text-lighter"></i></p>
+                            <h5>Channels</h5>
+                            <p>Organize your team conversations in open channels. Make a channel for a project, a team, or everyone has a transparent view.</p>
+                            <p><a class="small-3 fw-600" href="#">Read more <i class="fa fa-angle-right small-5 pl-1"></i></a></p>
+                        </div>
                     </div>
 
-                </div>
 
-            </div>
-        </section>
-        <section class="section text-white p-0" id="fornax">
-            <div class="container-wide">
-                <div class="row no-gutters">
+                    <div class="col-lg-4">
+                        <div class="card card-body border text-center">
+                            <p class="my-5"><i class="icon-chat lead-8 text-lighter"></i></p>
+                            <h5>Direct Messages</h5>
+                            <p>Send messages directly to another and any person or to a small group of people for more focused conversations.</p>
+                            <p><a class="small-3 fw-600" href="#">Read more <i class="fa fa-angle-right small-5 pl-1"></i></a></p>
+                        </div>
+                    </div>
 
-                    <div class="col-md-4 bg-img" id="home-fornax-section"></div>
 
-                    <div class="col-md-8 p-6 p-md-8">
-                        <h4>@lang('pages.home.What is Fornax')</h4>
-                        <p class="lead">@lang('pages.home.Fornax Description')</p>
+                    <div class="col-lg-4">
+                        <div class="card card-body border text-center">
+                            <p class="my-5"><i class="icon-mic lead-8 text-lighter"></i></p>
+                            <h5>Calls</h5>
+                            <p>Take a conversation from typing to face-to-face by starting a TheSaaS voice or video call in any Channel or Direct Message.</p>
+                            <p><a class="small-3 fw-600" href="#">Read more <i class="fa fa-angle-right small-5 pl-1"></i></a></p>
+                        </div>
                     </div>
 
                 </div>
             </div>
         </section>
-        <section class="section" id="section-values">
+
+
+        <!--
+        |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+        | CTA
+        |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+        !-->
+        <section class="section text-center">
             <div class="container">
-                <h2 class="text-center">@lang('pages.home.Our Values')</h2>
-                <div class="row gap-y align-items-center py-7">
-                    <div class="col-md-6 text-center">
-                        <img src="{{ asset('assets/img/vector/feather-alt-solid.svg') }}" width="200" alt="@lang('pages.home.values.1')">
+
+                <div class="row">
+                    <div class="col-md-6 mx-auto">
+                        <p><img src="{{ asset('assets/img/vector/13.png') }}" alt="..."></p>
+                        <br>
+                        <h3 class="mb-6"><strong>Reclaim your workday</strong></h3>
+                        <p class="lead text-muted">Less email. More productive. Our customers see an average 48.6% reduction in internal email, helping them enjoy a simpler, more pleasant, and more productive work life.</p>
+                        <br>
+                        <a class="btn btn-lg btn-round btn-success px-7" href="#">Start now</a>
                     </div>
-                    <div class="col-md-5 ml-auto text-center text-md-left">
-                        <p class="lead-9 fw-900 lh-1 opacity-10">01</p>
-                        <h3>@lang('pages.home.values.1')</h3>
-                        <p>@lang('pages.home.values-desc.1')</p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!--
+        |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+        | Pricing
+        |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+        !-->
+        <section id="section-pricing" class="section bg-gray">
+            <div class="container">
+                <header class="section-header">
+                    <h2>Affordable Pricing</h2>
+                    <hr>
+                    <p class="lead">TheSaaS for Teams is a single workspace for your small- to medium-sized company or team.</p>
+                </header>
+
+
+                <div class="text-center my-7">
+                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                        <label class="btn btn-round btn-outline-dark w-150 active">
+                            <input type="radio" name="pricing" value="monthly" autocomplete="off" checked> Monthly
+                        </label>
+                        <label class="btn btn-round btn-outline-dark w-150">
+                            <input type="radio" name="pricing" value="yearly" autocomplete="off"> Yearly
+                        </label>
                     </div>
                 </div>
 
 
-                <div class="row gap-y align-items-center py-7">
-                    <div class="col-md-5 mr-auto text-center text-md-left">
-                        <p class="lead-9 fw-900 lh-1 opacity-10">02</p>
-                        <h3>@lang('pages.home.values.2')</h3>
-                        <p>@lang('pages.home.values-desc.2')</p>
+                <div class="row gap-y text-center">
+
+                    <div class="col-md-4">
+                        <div class="pricing-1">
+                            <p class="plan-name">Free</p>
+                            <br>
+                            <h2 class="price">free</h2>
+                            <p class="small text-lighter">Forever!</p>
+
+                            <div class="text-muted">
+                                <small>Searchable messages up to 10K</small><br>
+                                <small>10 apps or service integrations</small><br>
+                                <small>5GB total file storage for the team</small><br>
+                            </div>
+
+                            <br>
+                            <p class="text-center py-3">
+                                <a class="btn btn-outline-primary" href="#">Get started</a>
+                            </p>
+                        </div>
                     </div>
 
-                    <div class="col-md-6 text-center order-first order-md-last">
-                        <img src="{{ asset('assets/img/vector/shield-alt-solid.svg') }}" width="200" alt="@lang('pages.home.values.2')">
+
+                    <div class="col-md-4">
+                        <div class="pricing-1 popular">
+                            <p class="plan-name">Standard</p>
+                            <br>
+                            <h2 class="price text-success">
+                                <span class="price-unit">$</span>
+                                <span data-bind-radio="pricing" data-monthly="6.67" data-yearly="75">6.67</span>
+                            </h2>
+                            <p class="small text-lighter">
+                                Per user/
+                                <span data-bind-radio="pricing" data-monthly="month" data-yearly="year">month</span>
+                            </p>
+
+                            <div class="text-muted">
+                                <small>Unlimited searchable message archives</small><br>
+                                <small>Unlimited apps and service integrations</small><br>
+                                <small>10GB file storage per team member</small><br>
+                            </div>
+
+                            <br>
+                            <p class="text-center py-3">
+                                <a class="btn btn-success" href="#" data-bind-href="pricing" data-monthly="#monthly" data-yearly="#yearly">Get started</a>
+                            </p>
+                        </div>
                     </div>
+
+
+                    <div class="col-md-4">
+                        <div class="pricing-1">
+                            <p class="plan-name">Plus</p>
+                            <br>
+                            <h2 class="price">
+                                <span class="price-unit">$</span>
+                                <span data-bind-radio="pricing" data-monthly="12.5" data-yearly="120">12.5</span>
+                            </h2>
+                            <p class="small text-lighter">
+                                Per user/
+                                <span data-bind-radio="pricing" data-monthly="month" data-yearly="year">month</span>
+                            </p>
+
+                            <div class="text-muted">
+                                <small>Everything in Free & Standard, and</small><br>
+                                <small>SAML-based single sign-on (SSO)</small><br>
+                                <small>Compliance Exports of all messages</small><br>
+                            </div>
+
+                            <br>
+                            <p class="text-center py-3">
+                                <a class="btn btn-outline-primary" href="#" data-bind-href="pricing" data-monthly="#monthly" data-yearly="#yearly">Get started</a>
+                            </p>
+                        </div>
+                    </div>
+
                 </div>
 
 
-                <div class="row gap-y align-items-center py-7">
-                    <div class="col-md-6 text-center">
-                        <img src="{{ asset('assets/img/vector/user-plus-solid.svg') }}" width="200" alt="@lang('pages.home.values.3')">
-                    </div>
+            </div>
+        </section>
 
-                    <div class="col-md-5 ml-auto text-center text-md-left">
-                        <p class="lead-9 fw-900 lh-1 opacity-10">03</p>
-                        <h3>@lang('pages.home.values.3')</h3>
-                        <p>@lang('pages.home.values-desc.3')</p>
-                    </div>
+
+        <!--
+        |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+        | Partner
+        |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+        !-->
+        <section class="section bg-gray py-6">
+            <div class="container">
+
+                <div class="partner partner-sm">
+                    <img src="{{ asset('assets/img/partner/1.png') }}" alt="partner 1">
+                    <img src="{{ asset('assets/img/partner/2.png') }}" alt="partner 2">
+                    <img src="{{ asset('assets/img/partner/3.png') }}" alt="partner 3">
+                    <img src="{{ asset('assets/img/partner/4.png') }}" alt="partner 4">
+                    <img src="{{ asset('assets/img/partner/5.png') }}" alt="partner 5">
+                    <img src="{{ asset('assets/img/partner/6.png') }}" alt="partner 6">
                 </div>
 
+            </div>
+        </section>
 
-                <div class="row gap-y align-items-center py-7">
-                    <div class="col-md-5 text-center text-md-left">
-                        <p class="lead-9 fw-900 lh-1 opacity-10">04</p>
-                        <h3>@lang('pages.home.values.4')</h3>
-                        <p>@lang('pages.home.values-desc.4')</p>
+
+        <!--
+        |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+        | FAQ
+        |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+        !-->
+        <section id="section-faq" class="section">
+            <div class="container">
+                <header class="section-header">
+                    <small>FAQ</small>
+                    <h2>Frequently Asked Questions</h2>
+                    <hr>
+                    <p>Got a question? We've got answers. If you have some other questions, contact us using email.</p>
+                </header>
+
+
+                <div class="row gap-y">
+                    <div class="col-md-6 col-xl-4">
+                        <h5>Is this a secure site for purchases?</h5>
+                        <p>Absolutely! We work with top payment companies which guarantees your safety and security. All billing information is stored on our payment processing partner which has the most stringent level of certification available in the payments industry.</p>
                     </div>
 
-                    <div class="col-md-6 ml-auto text-center order-first order-md-last">
-                        <img src="{{ asset('assets/img/vector/superscript-solid.svg') }}" width="200" alt="@lang('pages.home.values.4')">
-                    </div>
-                </div>
 
-                <div class="row gap-y align-items-center py-7">
-                    <div class="col-md-6 text-center">
-                        <img src="{{ asset('assets/img/vector/sync-alt-solid.svg') }}" width="200" alt="@lang('pages.home.values.5')">
-                    </div>
-                    <div class="col-md-5 ml-auto text-center text-md-left">
-                        <p class="lead-9 fw-900 lh-1 opacity-10">05</p>
-                        <h3>@lang('pages.home.values.5')</h3>
-                        <p>@lang('pages.home.values-desc.5')</p>
-                    </div>
-                </div>
-
-
-                <div class="row gap-y align-items-center py-7">
-                    <div class="col-md-5 mr-auto text-center text-md-left">
-                        <p class="lead-9 fw-900 lh-1 opacity-10">06</p>
-                        <h3>@lang('pages.home.values.6')</h3>
-                        <p>@lang('pages.home.values-desc.6')</p>
+                    <div class="col-md-6 col-xl-4">
+                        <h5>Can I cancel my subscription?</h5>
+                        <p>You can cancel your subscription anytime in your account. Once the subscription is cancelled, you will not be charged next month. You will continue to have access to your account until your current subscription expires.</p>
                     </div>
 
-                    <div class="col-md-6 text-center order-first order-md-last">
-                        <img src="{{ asset('assets/img/vector/users-solid.svg') }}" width="200" alt="@lang('pages.home.values.6')">
-                    </div>
-                </div>
 
-
-                <div class="row gap-y align-items-center py-7">
-                    <div class="col-md-6 text-center">
-                        <img src="{{ asset('assets/img/vector/calendar-check-regular.svg') }}" width="200" alt="@lang('pages.home.values.7')">
+                    <div class="col-md-6 col-xl-4">
+                        <h5>How long are your contracts?</h5>
+                        <p>Currently, we only offer monthly subscription. You can upgrade or cancel your monthly account at any time with no further obligation.</p>
                     </div>
 
-                    <div class="col-md-5 ml-auto text-center text-md-left">
-                        <p class="lead-9 fw-900 lh-1 opacity-10">07</p>
-                        <h3>@lang('pages.home.values.7')</h3>
-                        <p>@lang('pages.home.values-desc.7')</p>
-                    </div>
-                </div>
 
-
-                <div class="row gap-y align-items-center py-7">
-                    <div class="col-md-5 text-center text-md-left">
-                        <p class="lead-9 fw-900 lh-1 opacity-10">08</p>
-                        <h3>@lang('pages.home.values.8')</h3>
-                        <p>@lang('pages.home.values-desc.8')</p>
+                    <div class="col-md-6 col-xl-4">
+                        <h5>Can I update my card details?</h5>
+                        <p>Yes. Go to the billing section of your dashboard and update your payment information.</p>
                     </div>
 
-                    <div class="col-md-6 ml-auto text-center order-first order-md-last">
-                        <img src="{{ asset('assets/img/vector/crosshairs-solid.svg') }}" width="200" alt="@lang('pages.home.values.8')">
+
+                    <div class="col-md-6 col-xl-4">
+                        <h5>Can I request refund?</h5>
+                        <p>Unfortunately, not. We do not issue full or partial refunds for any reason.</p>
+                    </div>
+
+
+                    <div class="col-md-6 col-xl-4">
+                        <h5>Can I try your service for free?</h5>
+                        <p>Of course! We’re happy to offer a free plan to anyone who wants to try our service.</p>
                     </div>
                 </div>
-
 
             </div>
         </section>

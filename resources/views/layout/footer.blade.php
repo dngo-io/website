@@ -5,7 +5,7 @@
         <h2>@lang('pages.layout.subscribe.main')</h2>
 
         <div class="row mt-7">
-            <form action="{{ url('https://fornaxstudio.us19.list-manage.com/subscribe/post?u=034416cddc34058acb37b7993&amp;id=6eeccd4781') }}"
+            <form action="{{ url('https://fornaxstudio.us19.list-manage.com/subscribe/post') }}"
                   method="post"
                   id="mc-embedded-subscribe-form"
                   name="mc-embedded-subscribe-form"
@@ -31,13 +31,12 @@
             <div class="col-md-8 col-lg-6 mx-auto">
                 <div class="nav nav-bold nav-uppercase nav-center">
                     <a class="nav-link" href="{{ url('/') }}">@lang('pages.menu.Home')</a>
-                    <a class="nav-link" href="{{ url('/projects') }}">@lang('pages.menu.Projects')</a>
                     <a class="nav-link" href="{{ url('/contact') }}">@lang('pages.menu.Contact')</a>
                 </div>
 
                 <hr>
-                <p class="text-center">@lang('pages.layout.slogan')</p>
-                <p class="text-center"><img src="{{ asset('assets/img/favicon.png') }}" alt="Fornax Studio Icon" width="32"></p>
+                <p class="text-center">“Nanos gigantum humeris insidentes”</p>
+                <p class="text-center"><img src="{{ asset('assets/img/img/dngo-square-logo.png') }}" alt="Fornax Studio Icon" width="32"></p>
             </div>
         </div>
     </div>
