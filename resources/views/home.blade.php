@@ -7,13 +7,13 @@
 
                 <div class="col-lg-5">
                     <h1 class="display-4"><strong>{{ config('app.name') }}</strong>;<br>@lang('pages.home.slogan')</h1>
-                    <p class="lead mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p class="lead mt-5">The knowledge has always been an important additional tool for individuals to find themselves a better role in society during the history of humankind.</p>
 
                     <hr class="w-10 ml-0 my-7">
 
                     <p class="gap-xy">
-                        <a class="btn btn-lg btn-round btn-success mw-200" href="#section-pricing">Get Started</a>
-                        <a class="btn btn-lg btn-round btn-outline-success mw-200" href="#section-features">Features</a>
+                        <a class="btn btn-lg btn-round btn-success mw-200" href="#section-pricing">Books Project</a>
+                        <a class="btn btn-lg btn-round btn-outline-success mw-200" href="#section-features">Organisation</a>
                     </p>
                 </div>
 
@@ -38,17 +38,17 @@
         <section id="section-features" class="section">
             <div class="container">
                 <header class="section-header">
-                    <small>Feature</small>
-                    <h2>Team communication for the 21st century.</h2>
+                    <small>The Core</small>
+                    <h2>Values guiding and framing dNGO activities</h2>
                     <hr>
                 </header>
 
 
                 <div class="row gap-y align-items-center">
                     <div class="col-md-6 ml-auto">
-                        <h4>Drag, drop, and share your files.</h4>
-                        <p>Not just your messages, but all your files, images, PDFs, documents, and spreadsheets can be dropped right into TheSaaS and shared with anyone you want. Add comments, star for later reference, and it’s all completely searchable.</p>
-                        <p>If you use any services like Google Drive, Dropbox, or Box, just paste the link and that document is immediately in sync and searchable too.</p>
+                        <h4>Open Democracy</h4>
+                        <p>Dngo encourages its members to take the floor to express their opinions, and by doing so to get involved in decision-making processes.</p>
+                        <p>Furthermore, Dngo members will have the last word in deciding on strategy.</p>
                     </div>
 
                     <div class="col-md-5 order-md-first">
@@ -62,8 +62,8 @@
 
                 <div class="row gap-y align-items-center">
                     <div class="col-md-6 mr-auto">
-                        <h4>Works everywhere you go</h4>
-                        <p>Everything in TheSaaS—messages, notifications, files, and all—is automatically indexed and archived so that you can have it at your fingertips whenever you want. TheSaaS also indexes the content of every file so you can search within PDFs, Word documents, Google docs, and more. With one search box and a set of powerful search operators, you can slice and dice your way to that one message in your communication haystack.</p>
+                        <h4>Transparency</h4>
+                        <p>Blokchain’s advanced features allow everyone to monitor every single transaction (of any kind) performed using dNGO. This includes the funds that we gather and also the earnings that the team generates.</p>
                     </div>
 
                     <div class="col-md-5">
@@ -77,9 +77,8 @@
 
                 <div class="row gap-y align-items-center">
                     <div class="col-md-6 ml-auto">
-                        <h4>All your tools in one place.</h4>
-                        <p>Connect all the tools you use to TheSaaS and avoid all that constant switching between apps. Set up your integration so that you get all your notifications directly within TheSaaS—from support requests, code check-ins, and error logs to sales leads—all of them searchable in one central archive.</p>
-                        <p>If you use any services like Google Drive, Dropbox, or Box, just paste the link and that document is immediately in sync and searchable too.</p>
+                        <h4>Accountability</h4>
+                        <p>As a result of transparency, the Dngo team will be held responsible for every interaction that they make. In order to ensure a “checks and balances” system, an independent body that we dub “advisory board” will be supervising us to evaluate our performance.</p>
                     </div>
 
                     <div class="col-md-5 order-md-first">
