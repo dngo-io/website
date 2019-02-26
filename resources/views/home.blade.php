@@ -30,11 +30,6 @@
     </header>
     <main class="main-content">
 
-        <!--
-        |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
-        | Features
-        |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
-        !-->
         <section id="section-features" class="section">
             <div class="container">
                 <header class="section-header">
@@ -90,12 +85,57 @@
             </div>
         </section>
 
+        <section class="section bb-1">
+            <div class="container">
 
-        <!--
-        |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
-        | Features
-        |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
-        !-->
+                <div class="row">
+                    <div class="col-md-8 mb-6 mb-md-0">
+                        <img src="https://via.placeholder.com/800x600" alt="project image">
+                    </div>
+
+
+                    <div class="col-md-4">
+                        <h5>Project detail</h5>
+
+                        <p>Out or geared it but to best up samples the for she phase of copy would do in divine of taken and the take medical or upper at him in the logbook were, we price his mostly to commas.</p>
+
+                        <ul class="project-detail mt-7">
+                            <li>
+                                <strong>Client</strong>
+                                <span>DNGO</span>
+                            </li>
+
+                            <li>
+                                <strong>Date</strong>
+                                <span>June 27, 2019</span>
+                            </li>
+
+                            <li>
+                                <strong>Skills</strong>
+                                <span>Design, HTML, CSS, Javascript</span>
+                            </li>
+
+                            <li>
+                                <strong>Address</strong>
+                                <a href="#">dngo.io</a>
+                            </li>
+
+                            <li>
+                                <strong>Share</strong>
+                                <div class="social social-sm social-gray social-inline mt-2">
+                                    <a class="social-facebook" href="#"><i class="fa fa-facebook"></i></a>
+                                    <a class="social-twitter" href="#"><i class="fa fa-twitter"></i></a>
+                                    <a class="social-instagram" href="#"><i class="fa fa-instagram"></i></a>
+                                    <a class="social-dribbble" href="#"><i class="fa fa-dribbble"></i></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
         <section class="section bg-gray">
             <div class="container">
                 <div class="row gap-y">
