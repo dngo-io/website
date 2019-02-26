@@ -6,7 +6,7 @@
             <div class="row align-items-center h-100">
 
                 <div class="col-lg-5">
-                    <h1 class="display-4"><strong>{{ config('app.name') }}</strong>;<br>@lang('pages.home.slogan')</h1>
+                    <h1 class="display-4"><strong>{{ config('app.name') }}</strong></h1>
                     <p class="lead mt-5">The knowledge has always been an important additional tool for individuals to find themselves a better role in society during the history of humankind.</p>
 
                     <hr class="w-10 ml-0 my-7">
